@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Calculadora Básica</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <script src="js\index.js"></script>
+</head>
+<body>
+  <div class='container'>
+    <div id='calculator'>
+
+      <!-- TITLE -->
+      <div id='title' class='text-center'>
+        <h5><b>CALCULADORA</b></h5>
+      </div>
+
+      <!-- ENTRY BOX -->
+      <div id='entrybox' class='text-right'>
+        <div id='entry'>
+          <p id='answer'>0</p>
+        </div>
+        <div id='history'>
+          <p>0</p>
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+
+      <div id='buttons'>
+        <button data-type = "ac" class='red' value='ac'>AC</button>
+        <button class='red' value='ce'>CE</button>
+        <button data-type="calc" value='/'>&divide;</button>
+        <button data-type="calc" value='*'>x</button>
+
+        <button data-type="number" value='7'>7</button>
+        <button data-type="number" value='8'>8</button>
+        <button data-type="number" value='9'>9</button>
+        <button data-type="calc" value='-'>-</button>
+
+        <button data-type="number" value='4'>4</button>
+        <button data-type="number" value='5'>5</button>
+        <button data-type="number" value='6'>6</button>
+        <button data-type="calc" value='+'>+</button>
+
+
+        <button data-type="number" value='1'>1</button>
+        <button data-type="number" value='2'>2</button>
+        <button data-type="number" value='3'>3</button>
+        <button data-type="number" class='invisible'>N</button>
+
+        <button data-type="number" id='zeroButton' value='0'>0</button>
+        <button value='.'>.</button>
+        <button data-type="equal"   id='equalButton' value='='>=</button>
+      </div>
+      <!-- end buttons -->
+      <div id='tester'></div>
+    </div>
+    <!-- end calculator -->
+  </div>
+  <!-- end container -->
+
+  <footer id="footer" class="text-center">
+    <div class="container">
+      <p>&copy; 1996 - 2017 - CGLSOFT Serviços de TI. &middot;</p>
+      <div className="nav navbar-nav navbar-right social_media">
+        <a href="https://www.facebook.com/cglsoft"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        <a href="https://twitter.com/cglsoft"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        <a href="https://plus.google.com/+cglsoft"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        <a href="mailto:cglsoft@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+      </div>
+    </footer>
+</body>
+</html>
